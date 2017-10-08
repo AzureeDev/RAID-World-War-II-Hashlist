@@ -52716,3 +52716,12 @@ anims/vanilla/character/npc/escape_driver/truck_driver_anims/truck_driver_revers
 anims/vanilla/character/npc/escape_driver/segment_anims/boat_driver_come_here
 anims/vanilla/character/npc/escape_driver/segment_anims/truck_driver_come_here
 anims/vanilla/character/npc/escape_driver/segment_anims/kubelwagen_driver_come_here
+movies/vanilla/raid_anim_bg
+ui/elements/banner_steam_group_frame
+guis/textures/test_blur_df
+ui/loading_screens/camp_loading_screen
+ui/ingame/textures/hud/hud_circle
+ui/challenge_cards/cc_raid_common_on_the_scrounge_hud
+ui/loading_screens/loading_trainyard
+ui/loading_screens/loading_bridge
+core/textures/default_texture_01_df
