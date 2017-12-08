@@ -7,5 +7,5 @@ An hashlist for RAID: World War II.
 
 ## Contributors
 - Luffy
-- [MFC]OmG-3D-ReaL-EnCodeR
 - Matthelzor
+- [MFC]OmG-3D-ReaL-EnCodeR
