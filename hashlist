@@ -5521,6 +5521,7 @@ effects/vanilla/sparks/sp_partical_random_001
 effects/vanilla/sparks/sp_partical_random_002
 effects/vanilla/sparks/sp_random_001
 effects/vanilla/sparks/sp_sparks_generic_001
+effects/vanilla/textures/rain/rain_01_a_df
 effects/vanilla/water/water_spray_001
 effects/vanilla/weapons/12g_auto_fps
 effects/vanilla/weapons/50cal_auto_fps
@@ -43378,6 +43379,7 @@ ui/atlas/raid_atlas_experience_1
 ui/atlas/raid_atlas_experience_2
 ui/atlas/raid_atlas_experience_3
 ui/atlas/raid_atlas_experience_4
+ui/atlas/raid_atlas_hud
 ui/atlas/raid_atlas_intel_table_1
 ui/atlas/raid_atlas_intel_table_2
 ui/atlas/raid_atlas_menu
