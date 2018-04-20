@@ -48806,6 +48806,8 @@ units/vanilla/characters/players/generic/beta_jacket/textures/beta_jacket_fp_nm
 units/vanilla/characters/players/generic/beta_jacket/textures/beta_jacket_upper_df
 units/vanilla/characters/players/generic/beta_jacket/textures/beta_jacket_upper_gsm
 units/vanilla/characters/players/generic/beta_jacket/textures/beta_jacket_upper_nm
+units/vanilla/characters/players/generic/bomber_jacket/player_bomber_jacket_large_upper_hud
+units/vanilla/characters/players/generic/bomber_jacket/player_bomber_jacket_upper_hud
 units/vanilla/characters/players/generic/bomber_jacket/player_generic_bomber_jacket_fp
 units/vanilla/characters/players/generic/bomber_jacket/textures/bomber_jacket_fp_df
 units/vanilla/characters/players/generic/bomber_jacket/textures/bomber_jacket_fp_gsm
