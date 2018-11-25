@@ -5785,6 +5785,7 @@ core/lib/units/editor/mission/coreplayeffect
 core/lib/units/editor/mission/coreplaysound
 core/lib/units/editor/mission/corepointorientation
 core/lib/units/editor/mission/corerandom
+core/lib/units/editor/mission/coreropeoperatorunitelement
 core/lib/units/editor/mission/coreshape
 core/lib/units/editor/mission/corespawnunit
 core/lib/units/editor/mission/coretimer
@@ -7156,6 +7157,7 @@ levels/vanilla/zone_germany_tutorial/world_sounds
 levels/zone
 lib/entry
 lib/managers/achievmentmanager
+lib/managers/airdropmanager
 lib/managers/barragemanager
 lib/managers/blackmarketmanager
 lib/managers/breadcrumbmanager
@@ -7206,6 +7208,7 @@ lib/managers/droplootmanager
 lib/managers/dynamicresourcemanager
 lib/managers/enemymanager
 lib/managers/environmenteffectsmanager
+lib/managers/eventsystemmanager
 lib/managers/explosionmanager
 lib/managers/feedbackmanager
 lib/managers/firemanager
@@ -7226,6 +7229,7 @@ lib/managers/hud/hudcarry
 lib/managers/hud/hudcenterprompt
 lib/managers/hud/hudchat
 lib/managers/hud/hudchatmessage
+lib/managers/hud/hudcombatdebug
 lib/managers/hud/huddriving
 lib/managers/hud/hudequipment
 lib/managers/hud/hudhitconfirm
@@ -7366,6 +7370,7 @@ lib/managers/menu/raid_menu/controls/raidguicontrolexperiencepeerloot
 lib/managers/menu/raid_menu/controls/raidguicontrolgoldbarpeerloot
 lib/managers/menu/raid_menu/controls/raidguicontrolgoldbarrewarddetails
 lib/managers/menu/raid_menu/controls/raidguicontrolgreedbarsmall
+lib/managers/menu/raid_menu/controls/raidguicontrolgrenadeweaponstats
 lib/managers/menu/raid_menu/controls/raidguicontrolgrid
 lib/managers/menu/raid_menu/controls/raidguicontrolgridactive
 lib/managers/menu/raid_menu/controls/raidguicontrolgriditem
@@ -7724,6 +7729,7 @@ lib/tweak_data/dlctweakdata
 lib/tweak_data/dramatweakdata
 lib/tweak_data/droploottweakdata
 lib/tweak_data/equipmentstweakdata
+lib/tweak_data/eventstweakdata
 lib/tweak_data/greedtweakdata
 lib/tweak_data/group_ai/groupairaidtweakdata
 lib/tweak_data/groupaitweakdata
@@ -7775,6 +7781,7 @@ lib/units/beings/player/states/playerfoxhole
 lib/units/beings/player/states/playerfreefall
 lib/units/beings/player/states/playerincapacitated
 lib/units/beings/player/states/playermovementstate
+lib/units/beings/player/states/playermoveobject
 lib/units/beings/player/states/playerparachuting
 lib/units/beings/player/states/playerstandard
 lib/units/beings/player/states/playertased
@@ -7820,6 +7827,7 @@ lib/units/editor/aigraphelement
 lib/units/editor/airemoveelement
 lib/units/editor/areaminpoliceforceunitelement
 lib/units/editor/awardachievmentelement
+lib/units/editor/blackscreenelement
 lib/units/editor/blackscreenvariantelement
 lib/units/editor/blurzoneelement
 lib/units/editor/carryelement
@@ -7830,12 +7838,17 @@ lib/units/editor/dialogueelement
 lib/units/editor/difficultyelement
 lib/units/editor/disableunitelement
 lib/units/editor/dropinstateelement
+lib/units/editor/droppointelement
+lib/units/editor/droppointgroupelement
 lib/units/editor/enablesoundenvironmentelement
 lib/units/editor/enableunitelement
 lib/units/editor/enemydummytrigger
 lib/units/editor/enemypreferedelement
+lib/units/editor/environmentareaoperatorelement
+lib/units/editor/environmenteffectelement
 lib/units/editor/environmentoperatorelement
 lib/units/editor/equipmentelement
+lib/units/editor/execluaoperatorelement
 lib/units/editor/experienceelement
 lib/units/editor/explosiondamageelement
 lib/units/editor/explosionelement
@@ -7844,6 +7857,9 @@ lib/units/editor/feedbackelement
 lib/units/editor/filterelement
 lib/units/editor/fleepointelement
 lib/units/editor/gameeventelement
+lib/units/editor/globalstatefilterelement
+lib/units/editor/globalstateoperatorelement
+lib/units/editor/globalstatetriggerelement
 lib/units/editor/hintelement
 lib/units/editor/instigatorelement
 lib/units/editor/instigatorruleelement
@@ -7854,9 +7870,13 @@ lib/units/editor/killzoneelement
 lib/units/editor/lasertriggerelement
 lib/units/editor/lookattrigger
 lib/units/editor/lootbagelement
+lib/units/editor/mapchangefloorelement
+lib/units/editor/metaldetectorelement
 lib/units/editor/missionend
 lib/units/editor/modifyplayerelement
 lib/units/editor/motionpathmarkerelement
+lib/units/editor/navigationstitcheroperatorunitelement
+lib/units/editor/navigationstitcherunitelement
 lib/units/editor/navobstacleelement
 lib/units/editor/objectiveelement
 lib/units/editor/pickupelement
@@ -7866,6 +7886,7 @@ lib/units/editor/pointofnoreturnelement
 lib/units/editor/setoutlineelement
 lib/units/editor/slowmotionelement
 lib/units/editor/smokegrenadeelement
+lib/units/editor/soundswitchelement
 lib/units/editor/spawncivilianelement
 lib/units/editor/spawnciviliangroupelement
 lib/units/editor/spawndeployableelement
@@ -7889,6 +7910,7 @@ lib/units/editor/vehicleoperatorunitelement
 lib/units/editor/vehicletriggerunitelement
 lib/units/editor/waypointelement
 lib/units/editor/whisperstateelement
+lib/units/editor/worldoperatorunitelement
 lib/units/enemies/cop/actions/full_body/copactionact
 lib/units/enemies/cop/actions/full_body/copactiondodge
 lib/units/enemies/cop/actions/full_body/copactionhurt
@@ -7947,7 +7969,9 @@ lib/units/equipment/sentry_gun/sentrygundamage
 lib/units/equipment/sentry_gun/sentrygunmovement
 lib/units/goldassetautomaticext
 lib/units/goldassetext
+lib/units/interactions/cartinteractionext
 lib/units/interactions/interactionext
+lib/units/interactions/moveobjectinteractionext
 lib/units/interactions/specialinteractionext
 lib/units/interactions/turretinteractionext
 lib/units/menuscriptunitdata
@@ -8000,12 +8024,14 @@ lib/units/props/timergui
 lib/units/props/tvgui
 lib/units/props/waypointext
 lib/units/props/zipline
+lib/units/revivepumpkinext
 lib/units/scriptlocations
 lib/units/scriptunitdata
 lib/units/simplecharacter
 lib/units/syncunitdata
 lib/units/unitbase
 lib/units/unitdamage
+lib/units/vehicles/airdropplane
 lib/units/vehicles/animatedvehiclebase
 lib/units/vehicles/basevehiclestate
 lib/units/vehicles/npc/npcbasevehiclestate
@@ -8036,6 +8062,7 @@ lib/units/weapons/akimboshotgunbase
 lib/units/weapons/akimboweaponbase
 lib/units/weapons/bowweaponbase
 lib/units/weapons/cosmeticsweaponbase
+lib/units/weapons/dp28raycastweaponbase
 lib/units/weapons/flamethrowereffectextension
 lib/units/weapons/grenadelauncherbase
 lib/units/weapons/grenades/distractionrock
@@ -8047,6 +8074,8 @@ lib/units/weapons/grenades/m79grenadebase
 lib/units/weapons/grenades/molotovgrenade
 lib/units/weapons/grenades/npcgrenade
 lib/units/weapons/grenades/smokegrenade
+lib/units/weapons/hybridreloadraycastweaponbase
+lib/units/weapons/leeenfieldraycastweaponbase
 lib/units/weapons/meleeweaponbase
 lib/units/weapons/mountedweapon
 lib/units/weapons/newflamethrowerbase
@@ -8076,6 +8105,7 @@ lib/units/weapons/weaponlaser
 lib/units/weapons/weaponliongadget1
 lib/units/weapons/weaponsecondsight
 lib/units/weapons/weaponsimpleanim
+lib/units/weapons/welrodraycastweaponbase
 lib/utils/bezier3
 lib/utils/bezier3ai
 lib/utils/bezier3hit
@@ -8085,8 +8115,10 @@ lib/utils/coroutinemanager
 lib/utils/dev/editor/worlddefinition
 lib/utils/dev/editor/xml/predefined_worlds
 lib/utils/dev/freeflight
+lib/utils/dev/tools/inventorygenerator
 lib/utils/dev/tools/inventoryiconcreator
 lib/utils/dev/tools/parsealldramas
+lib/utils/dev/tools/savefilegenerator
 lib/utils/dev/tools/worldeditor
 lib/utils/easing
 lib/utils/eventlistenerholder
