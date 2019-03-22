@@ -7204,6 +7204,7 @@ lib/managers/dialogs/xbox360selectstoragedialog
 lib/managers/dialogs/xbox360selectuserdialog
 lib/managers/dlcmanager
 lib/managers/dotmanager
+lib/managers/dramamanager
 lib/managers/droplootmanager
 lib/managers/dynamicresourcemanager
 lib/managers/enemymanager
@@ -7905,6 +7906,7 @@ lib/units/editor/statisticsjobselement
 lib/units/editor/teamaicommandselement
 lib/units/editor/teammatecommentelement
 lib/units/editor/teamrelationelement
+lib/units/editor/teleportplayerelement
 lib/units/editor/variableelement
 lib/units/editor/vehicleoperatorunitelement
 lib/units/editor/vehicletriggerunitelement
@@ -8208,6 +8210,8 @@ movies/vanilla/mission_briefings/02_mission_brief_a5_rescue_v005
 movies/vanilla/mission_briefings/02_mission_brief_b1_cause-carnage_v004
 movies/vanilla/mission_briefings/02_mission_brief_b3_steal-intel_v004
 movies/vanilla/mission_briefings/02_mission_brief_b5_steal-valuables_cause-carnage_v004
+movies/vanilla/mission_briefings/censored/02_mission_brief_b2_assassination_g_v004
+movies/vanilla/mission_briefings/censored/02_mission_brief_b4_steal-valuables_cause-carnage_g_v004
 movies/vanilla/mission_briefings/global/02_mission_brief_b2_assassination_v004
 movies/vanilla/mission_briefings/global/02_mission_brief_b4_steal-valuables_cause-carnage_v004
 movies/vanilla/operation_briefings/censored/03_operation_brief_op-c3_g_v004
@@ -44374,6 +44378,7 @@ ui/interactions/thermite_indicator_df
 ui/loading_screens/camp_loading_screen
 ui/loading_screens/loading_bridge
 ui/loading_screens/loading_flak
+ui/loading_screens/loading_flak_censored
 ui/loading_screens/loading_kelly
 ui/loading_screens/loading_radio
 ui/loading_screens/loading_rhinegold_00
@@ -44391,6 +44396,7 @@ ui/loading_screens/raid_loading_clear_skies_04
 ui/loading_screens/raid_loading_clear_skies_05
 ui/loading_screens/raid_loading_clear_skies_06
 ui/loading_screens/raid_loading_convoy
+ui/loading_screens/raid_loading_convoy_censored
 ui/loading_screens/raid_loading_forest
 ui/loading_screens/raid_loading_hunters
 ui/loading_screens/raid_loading_spies
