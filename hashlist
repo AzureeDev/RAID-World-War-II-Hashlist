@@ -55271,3 +55271,11 @@ world_setting
 world_sounds
 xbox_live
 xml
+ui/warcries/wc_infltrator_ghost_l0_alpha_blend_hud
+ui/warcries/wc_recon_sharp_shooter_l1_add_hud
+ui/warcries/wc_recon_sharp_shooter_l0_alpha_blend_hud
+ui/warcries/wc_assault_going_ham_l1_alpha_blend_hud
+ui/warcries/wc_assault_going_ham_l0_alpha_blend_hud
+core/textures/vignette
+core/textures/lens_flare_color_lut
+core/textures/screen_raindrops_nm
